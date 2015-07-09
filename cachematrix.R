@@ -28,3 +28,17 @@ cacheSolve <- function(x, ...) {
      invr
 }
 
+
+## Dry Run Results
+
+## > x = rbind(c(1, -1/2), c(-1/2, 1))
+## > m = makeCacheMatrix(x)
+## > m$get()
+##     [,1] [,2]
+## [1,]  1.0 -0.5
+## [2,] -0.5  1.0
+## > cacheSolve(m)
+##          [,1]      [,2]
+## [1,] 1.3333333 0.6666667
+## [2,] 0.6666667 1.3333333
+
